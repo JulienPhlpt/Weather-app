@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #eeeeee;
+  font-family: "lato", sans-serif;
+}
+
+h1 {
+  color: lightslategray;
+}
+
+.card {
+  height: 50%;
+  width: 50%;
+  padding: 2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 50px;
+  background: #eeeeee;
+  -webkit-box-shadow: 8px 8px 16px #d1d1d1, -8px -8px 16px #ffffff;
+          box-shadow: 8px 8px 16px #d1d1d1, -8px -8px 16px #ffffff;
+}
+
+.location,
+.temperature {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.location {
+  margin-bottom: auto;
+  padding: 20px 40px;
+  border-radius: 20px;
+  background: #eeeeee;
+  cursor: pointer;
+  -webkit-box-shadow: 8px 8px 16px #d1d1d1, -8px -8px 16px #ffffff;
+          box-shadow: 8px 8px 16px #d1d1d1, -8px -8px 16px #ffffff;
+}
+
+.toggle-zone {
+  background: #eeeeee;
+  -webkit-box-shadow: inset 8px 8px 16px #d1d1d1, inset -8px -8px 16px #ffffff;
+          box-shadow: inset 8px 8px 16px #d1d1d1, inset -8px -8px 16px #ffffff;
+  -webkit-transition: -webkit-box-shadow 0.3s ease-in-out;
+  transition: -webkit-box-shadow 0.3s ease-in-out;
+  transition: box-shadow 0.3s ease-in-out;
+  transition: box-shadow 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+}
+
+.temperature {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 60%;
+}
+
+.temperature-description {
+  letter-spacing: 5px;
+  padding: 20px 60px;
+  color: darkslategray;
+}
+
+#date {
+  text-align: center;
+  margin-bottom: 20px;
+  height: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px 60px;
+  color: darkslategray;
+}
+
+.degree-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 60px;
+  margin-top: 0px;
+}
+
+.degree-section span {
+  margin: 10px;
+  font-size: 30px;
+}
+
+.degree-section h2 {
+  font-size: 40px;
+  cursor: pointer;
+  color: darkslategray;
+  background: #eef0f4;
+  padding: 1rem;
+  border-radius: 20px;
+  background: #eeeeee;
+  -webkit-box-shadow: 8px 8px 16px #d1d1d1, -8px -8px 16px #ffffff;
+          box-shadow: 8px 8px 16px #d1d1d1, -8px -8px 16px #ffffff;
+  -webkit-transition: -webkit-box-shadow 0.3s ease-in-out;
+  transition: -webkit-box-shadow 0.3s ease-in-out;
+  transition: box-shadow 0.3s ease-in-out;
+  transition: box-shadow 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+}
+
+.degree-section .toggle-temp {
+  border-radius: 20px;
+  background: #eeeeee;
+  -webkit-box-shadow: inset 8px 8px 16px #d1d1d1, inset -8px -8px 16px #ffffff;
+          box-shadow: inset 8px 8px 16px #d1d1d1, inset -8px -8px 16px #ffffff;
+  -webkit-transition: -webkit-box-shadow 0.3s ease-in-out;
+  transition: -webkit-box-shadow 0.3s ease-in-out;
+  transition: box-shadow 0.3s ease-in-out;
+  transition: box-shadow 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+}
+
+.degree-section img {
+  padding: 1rem;
+  border-radius: 50px;
+  background: #eeeeee;
+  -webkit-box-shadow: inset 8px 8px 16px #d1d1d1, inset -8px -8px 16px #ffffff;
+          box-shadow: inset 8px 8px 16px #d1d1d1, inset -8px -8px 16px #ffffff;
+  cursor: pointer;
+}
+
+.degree-section .toggle-icon {
+  border-radius: 50px;
+  background: #eeeeee;
+  -webkit-box-shadow: 8px 8px 16px #d1d1d1, -8px -8px 16px #ffffff;
+          box-shadow: 8px 8px 16px #d1d1d1, -8px -8px 16px #ffffff;
+}
+/*# sourceMappingURL=style.css.map */

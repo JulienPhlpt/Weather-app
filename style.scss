@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+$body-color: #eeeeee;
+$light-neo: #d1d1d1;
+$dark-neo: #ffffff;
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: $body-color;
+  font-family: "lato", sans-serif;
+}
+
+h1 {
+  color: lightslategray;
+}
+
+.card {
+  height: 50%;
+  width: 50%;
+  padding: 2rem;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  border-radius: 50px;
+  background: $body-color;
+  box-shadow: 8px 8px 16px $light-neo, -8px -8px 16px $dark-neo;
+}
+
+.location,
+.temperature {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.location {
+  margin-bottom: auto;
+  padding: 20px 40px;
+  border-radius: 20px;
+  background: #eeeeee;
+  cursor: pointer;
+  box-shadow: 8px 8px 16px $light-neo, -8px -8px 16px $dark-neo;
+}
+
+.toggle-zone {
+  background: #eeeeee;
+  box-shadow: inset 8px 8px 16px $light-neo, inset -8px -8px 16px $dark-neo;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.temperature {
+  flex-direction: column;
+  height: 60%;
+}
+
+.temperature-description {
+  letter-spacing: 5px;
+  padding: 20px 60px;
+  color: darkslategray;
+}
+
+#date {
+  text-align: center;
+  margin-bottom: 20px;
+  height: 20%;
+  display: flex;
+  padding: 20px 60px;
+  color: darkslategray;
+}
+
+.degree-section {
+  display: flex;
+  align-items: center;
+  padding: 0 60px;
+  margin-top: 0px;
+
+  span {
+    margin: 10px;
+    font-size: 30px;
+  }
+
+  h2 {
+    font-size: 40px;
+    cursor: pointer;
+    color: darkslategray;
+    background: #eef0f4;
+    padding: 1rem;
+    border-radius: 20px;
+    background: #eeeeee;
+    box-shadow: 8px 8px 16px $light-neo, -8px -8px 16px $dark-neo;
+    transition: box-shadow 0.3s ease-in-out;
+  }
+
+  .toggle-temp {
+    border-radius: 20px;
+    background: #eeeeee;
+    box-shadow: inset 8px 8px 16px $light-neo, inset -8px -8px 16px $dark-neo;
+    transition: box-shadow 0.3s ease-in-out;
+  }
+
+  img {
+    padding: 1rem;
+    border-radius: 50px;
+    background: #eeeeee;
+    box-shadow: inset 8px 8px 16px $light-neo, inset -8px -8px 16px $dark-neo;
+    cursor: pointer;
+  }
+
+  .toggle-icon {
+    border-radius: 50px;
+    background: #eeeeee;
+    box-shadow: 8px 8px 16px $light-neo, -8px -8px 16px $dark-neo;
+  }
+}
